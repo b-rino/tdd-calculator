@@ -43,4 +43,21 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @DisplayName("Addition with String argument")
+    @Test
+    public void test5(){
+        int actual = calc.add("1, 2, 3");
+        int expected = 6;
+        assertEquals(expected, actual);
+    }
+
+    @DisplayName("Addition with String[] argument")
+    @Test
+    public void test6(){
+        int[] numbers = {1, 2, 3};
+        int actual = calc.add(numbers);
+        int expected = 6;
+        assertEquals(expected, actual);
+    }
+
 }
