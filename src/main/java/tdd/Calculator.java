@@ -2,23 +2,23 @@ package tdd;
 
 public class Calculator {
 
-    public float add(float a, float b){
+    public int add(int a, int b){
         return a + b;
     }
 
-    public float add(String numbers){
-        count
+    public int add(String numbers){
+        return 0;
     }
 
-    public float subtract(float a, float b){
+    public int subtract(int a, int b){
         return a - b;
     }
 
-    public float mult(float a, float b){
+    public int multiply(int a, int b){
         return a * b;
     }
 
-    public float div(float a, float b){
+    public int divide(int a, int b){
         return a / b;
     }
 }
