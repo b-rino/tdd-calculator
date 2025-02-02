@@ -14,32 +14,32 @@ class CalculatorTest {
     @DisplayName("Addition")
     @Test
     public void test1(){
-        float actual = calc.add(2.2f, 14.9f);
-        float expected = 17.1f;
+        int actual = calc.add(2, 14);
+        int expected = 16;
         assertEquals(expected, actual);
     }
 
     @DisplayName("Subtraction")
     @Test
     public void test2(){
-        float actual = calc.subtract(2.2f, 14.9f);
-        float expected = -12.7f;
+        int actual = calc.subtract(2, 16);
+        int expected = -14;
         assertEquals(expected, actual);
     }
 
     @DisplayName("Multiplication")
     @Test
     public void test3(){
-        float actual = calc.mult(2.2f, 14.9f);
-        float expected = 32.78f;
+        int actual = calc.multiply(5, 5);
+        int expected = 25;
         assertEquals(expected, actual);
     }
 
     @DisplayName("Division")
     @Test
     public void test4(){
-        float actual = calc.div(10, 5);
-        float expected = 2;
+        int actual = calc.divide(10, 5);
+        int expected = 2;
         assertEquals(expected, actual);
     }
 
